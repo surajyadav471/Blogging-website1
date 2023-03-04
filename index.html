@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogging Website</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="header">
+    <h1>Blogging Website</h1>
+    <button class="create-blog-button">Create New Post</button>
+  </div>
+<div class="modal">
+  <div class="modal-content">
+    <span class="close-button">&times;</span>
+    <h2>Create A Post</h2>
+    <form id="blog-form">
+      <div class="form-input">
+        <label for="blog-title" class="form-label">Title:</label>
+        <input type="text" id="blog-title" name="blog-title" required>
+      </div>
+      <div class="form-input">
+        <label for="blog-description" class="form-label">Description:</label>
+        <textarea id="blog-description" name="blog-description" rows="5" required></textarea>
+      </div>
+      <button type="submit" class="submit-button">Submit</button>
+    </form>
+  </div>
+</div>
+
+<div class="blog-posts"></div>
+<script src="./script.js"></script>
+</body>
+</html>
